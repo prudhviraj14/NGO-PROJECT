@@ -141,3 +141,19 @@ a:hover {
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
+img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  @media (max-width: 600px) {
+    img {
+      margin-top: 10%; /* Less margin on small screens */
+    }
+  }
+    
