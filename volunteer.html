@@ -1,48 +1,65 @@
-<h2>Volunteer Registration</h2>
 <!DOCTYPE html>
 <html lang="en">
- <link rel="stylesheet" href="styles.css">
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Volunteer Registration</h2>
 <form action="volunteer_signup.php" method="POST">
     <label for="name">Name:</label>
-    <input type="text" name="name" required>
+    <input type="text" id="name" name="name" required>
     
     <label for="email">Email:</label>
-    <input type="email" name="email" required>
+    <input type="email" id="email" name="email" required>
     
     <label for="password">Password:</label>
-    <input type="password" name="password" required>
+    <input type="password" id="password" name="password" required>
     
     <label for="qualifications">Qualifications:</label>
-    <input type="text" name="qualifications" required>
+    <input type="text" id="qualifications" name="qualifications" required>
     
     <label for="gender">Gender:</label>
-    <select name="gender" required>
+    <select id="gender" name="gender" required>
         <option value="male">Male</option>
         <option value="female">Female</option>
+        <option value="other">Other</option>
     </select>
 
     <label for="institute">Institute:</label>
-    <input type="text" name="institute" required>
+    <input type="text" id="institute" name="institute" required>
     
     <label for="school">School:</label>
-    <input type="text" name="school" required>
+    <input type="text" id="school" name="school" required>
     
     <label for="experience">Experience:</label>
-    <input type="text" name="experience" required>
+    <textarea id="experience" name="experience" required></textarea>
+
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills" name="skills" placeholder="e.g., Web Development, Content Writing" required>
+
+    <label for="interests">Interests:</label>
+    <input type="text" id="interests" name="interests" placeholder="e.g., Education, Health, Environment" required>
+
+    <label for="availability">Availability:</label>
+    <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Evenings" required>
 
     <input type="submit" value="Register">
 </form>
 
 <h2>Existing Volunteer Login</h2>
 <form action="volunteer_login.php" method="POST">
-    <label for="email">Email:</label>
-    <input type="email" name="email" required>
+    <label for="login-email">Email:</label>
+    <input type="email" id="login-email" name="email" required>
     
-    <label for="password">Password:</label>
-    <input type="password" name="password" required>
+    <label for="login-password">Password:</label>
+    <input type="password" id="login-password" name="password" required>
     
     <input type="submit" value="Login">
 </form>
+
 </body>
 </html>

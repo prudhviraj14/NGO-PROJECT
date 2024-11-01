@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['volunteer_name'] = $row['name']; // Store volunteer name
 
             // Check if a job is allocated
-            if (!empty($row['job_title'])) {
-                echo "Welcome, " . $row['name'] . "! Your allocated job is: " . $row['job_title'];
+            if (!empty($row['work_title'])) {
+                echo "Welcome, " . $row['name'] . "! Your allocated job is: " . $row['work_title'];
             } else {
                 echo "Welcome, " . $row['name'] . "! You currently have no allocated jobs.";
             }
