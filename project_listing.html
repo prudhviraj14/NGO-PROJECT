@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Project Listing</h2>
+<form action="project_listing.php" method="POST">
+    <label for="title">Project Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Project Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="required_skills">Required Skills:</label>
+    <input type="text" id="required_skills" name="required_skills" placeholder="e.g., Teamwork, Leadership" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="contact_email">Contact Email:</label>
+    <input type="email" id="contact_email" name="contact_email" required>
+
+    <input type="submit" value="List Project">
+</form>
+
+</body>
+</html>
